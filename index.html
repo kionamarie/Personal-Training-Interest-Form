@@ -6,20 +6,26 @@
     <title>Personal Training Interest Form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <h1>Personal Training Interest Form</h1>
-    <p>
+    <div id="header"><h1>Personal Training Interest Form</h1>
+    <p class="centered">
       If you would like to express interest in our personal training services,
       please fill out the following form with the required information.
     </p>
+  </div>
+
+  <div>
     <form action="https://register-demo.freecodecamp.org">
-      <fieldset>
+      
+      <fieldset id="first">
         <h2>Contact Information</h2>
         <label>First Name: <input name="fname" type="text" required /> </label>
         <label>Last Name: <input name="lname" type="text" required /> </label>
         <label>Email: <input name="email" type="email" required /> </label>
       </fieldset>
-      <fieldset>
+
+      <fieldset id="second">
         <h2>Personal Information</h2>
         <label>Gender: <select name="gender">
             <option value="">Select one</option>
@@ -28,18 +34,19 @@
             <option value="3">Non-binary</option>
             <option value="4">Other (Not Listed)</option>
         </select>
-        <label>Age: <input name="age" type="number" min="18" max="100"> *Must be atleast 18 years of age</label>
+        <label>Age: <input name="age" type="number" min="18" max="100"> 
+          <p class="pfont">*Must be atleast 18 years of age</p></label>
         <label>
-            Current Fitness Activity Level 
+            Current Fitness Activity Level <p class="pfont"> (Click <a href="https://antranik.org/proper-activity-level-for-calorie-intake/" target="_blank">here </a> for a description of each type of lifestyle.)</p>
             <label><input name="activitylvl" type="radio">Sedentary</label>
             <label><input name="activitylvl" type="radio">Active</label>
             <label><input name="activitylvl" type="radio">Very Active</label>
-            <p> (Click <a href="https://antranik.org/proper-activity-level-for-calorie-intake/" target="_blank">here </a> for a description of each type of lifestyle.)</p>
         </label>
         <label>BMI: <input name="bmi" type="number"> </label>
-        <p> (Click <a href="https://antranik.org/proper-activity-level-for-calorie-intake/" target="_blank">here</a> to calculate your BMI.)</p>
+        <p class="pfont"> (Click <a href="https://antranik.org/proper-activity-level-for-calorie-intake/" target="_blank">here</a> to calculate your BMI.)</p>
     </fieldset>
-      <fieldset>
+     
+    <fieldset>
         <h2>Goals</h2>
         <label>I want to.. <select name="goal">
             <option value="">Select one</option>
@@ -66,11 +73,13 @@
             <label><input name="days" type="checkbox" value="8">I'm unsure right now</label>
         </label>
       </fieldset>
+      
       <fieldset>
         <h2>Do you have any additional questions or comments?</h2>
-        <label>Leave us a message <textarea id="comments"></textarea></label>
+        <label class="centered">Leave us a message <textarea id="comments"></textarea></label>
       </fieldset>
       <input id="submit" type="submit" value="Submit"/>
     </form>
+  </div>
   </body>
 </html>

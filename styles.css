@@ -1,0 +1,39 @@
+body {
+    background-color: #a27e65;
+    width: 100vh;
+    margin: auto;
+}
+.centered, h1, h2 {
+    text-align: center;
+}
+
+label, textarea{display: block;
+margin: 1rem 0;
+font-weight: bold;}
+
+div {
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    background-color: #C4A484;
+    border-radius: 30px;}
+
+input, select {background-color: rgb(250, 227, 203)}
+
+#header{
+    width: 75vh;
+    margin: auto;
+    border-radius: 20px;
+}
+.pfont {font-size: 12px;}
+
+textarea{
+    margin: auto;
+    background-color: rgb(250, 227, 203);
+    width: 50%;
+}
+
+
+
+
